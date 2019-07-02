@@ -22,7 +22,7 @@ var routes  = require("../Routes/")(router,mysql,pool);
 
 app.use('/',router);
 
-http.listen(3000,function(){
+http.listen(process.env.PORT || 3000,function(){
     console.log("Listening on 3000");
 });
 
